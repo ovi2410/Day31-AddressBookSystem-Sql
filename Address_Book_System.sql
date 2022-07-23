@@ -32,5 +32,9 @@ Update Address_Book1_Table
 set Address='836 Heritage Resort Road'
 where FirstName='Rutuja' and SecondName='Kolte';
 
+------ UC 5: Ability to Delete Contact Person Based on their Name ------
+delete 
+from Address_Book1_Table
+where FirstName='Anita' and SecondName='Yadav'
 
 
