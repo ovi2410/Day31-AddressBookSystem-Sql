@@ -21,4 +21,16 @@ values('Harsha','Verma','645 Catherine Street','Bangalore','Karnataka',243001,98
 
 select * from Address_Book1_Table;
 
+------ UC 4: Ability to Edit Contact Person Based on their Name ------
+--Edit Email based on Name--
+Update Address_Book1_Table
+set Email='AnitaYadav@gmail.com'
+where FirstName='Anita'
+
+--Edit Address based on Name--
+Update Address_Book1_Table
+set Address='836 Heritage Resort Road'
+where FirstName='Rutuja' and SecondName='Kolte';
+
+
 
