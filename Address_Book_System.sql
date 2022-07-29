@@ -44,3 +44,11 @@ from Address_Book1_Table
 where City='Bangalore' or State='Karnataka'
 
 
+------ UC 7: Ability to Retrieve Count of Person belonging to a City or State ------
+Insert into Address_Book1_Table(FirstName,SecondName,Address,City,State,zip,PhoneNumber,Email) 
+values('meena','Vargheese','22 Catherine Street','Hosur','Karnataka',2545001,957575050,'Meena@gmail.com')
+select Count(*),state,City
+from Address_Book1_Table
+Group by state,City
+
+
