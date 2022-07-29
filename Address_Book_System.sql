@@ -57,5 +57,29 @@ from Address_Book1_Table
 where City='Mumbai'
 order by(FirstName)
 
+------ UC 9: Identify each Address Book with name andType ------
+
+alter table Address_Book1_Table
+add AddressBook1Name varchar(100),
+Type varchar(100)
+
+--Update values for Type=Friends--
+update Address_Book1_Table
+set AddressBook1Name='FriendName',Type='Friends'
+where FirstName='Harsha' or FirstName='Rutuja'
+
+--Update values for Type=Family--
+update Address_Book1_Table
+set AddressBook1Name='Mom',Type='Family'
+where FirstName='Pramela'
+
+--Update values for Type=Profession--
+update Address_Book1_Table
+set AddressBook1Name='Manager',Type='Profession'
+where FirstName='Meena'
+select * from Address_Book1_Table;
+
+
+
 
 
