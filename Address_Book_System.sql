@@ -51,4 +51,11 @@ select Count(*),state,City
 from Address_Book1_Table
 Group by state,City
 
+------ UC 8: Ability to retrieve entries sorted alphabetically ------
+select *
+from Address_Book1_Table
+where City='Mumbai'
+order by(FirstName)
+
+
 
